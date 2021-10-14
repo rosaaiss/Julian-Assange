@@ -34,10 +34,7 @@ img{
     top: 0%;
     z-index: 10;
     background: black; 
-    height: 40px;
-    width: 100%; 
-    /* border:1px solid white;  */
-  
+    height: 40px; 
 }
 
 .header a{
@@ -54,27 +51,25 @@ a:hover{
 .accueil{
     background: url('image/accueil.png') no-repeat center/cover;
     height: 1024px;
-    /* max-width: 100%; */
 }
 
 .titre{
     flex-direction: column;
-    gap:20px;
-}
-
-.titre p{
+    justify-content: center;
     padding-left: 20px; 
-    font-size: 40px;
-     font-family: 'robot', sans-serif;
+    height: 100%;
 }
 
-.titre h1{
-    font-size:90px;
+ h1{
+    font-size:60px;
     line-height: 1.5em;
-    padding-left: 15px;
-    padding-top: 400px;
-    font-family: 'Domine', sans-serif;
+    padding-left: 15px; 
+}
+
+ .julian{
+    font-size:90px;
     color:rgba(223, 45, 45, 0.863);
+    font-family: 'Domine', sans-serif;
 }
 
 h2{
@@ -370,17 +365,18 @@ h2{
 
         .titre{
           gap:100px;
+         justify-content: end;
+         padding-bottom: 100px;
+          
         }
 
-       .titre h1{
-        font-size: 50px;
-        padding-top: 600px;
-       }
+        .julian{
+            font-size: 50px;
+        }
 
-       .titre p{   
-        padding-left: 30px;
+        h1{
         font-size: 30px;
-    }
+       }
  
        p{
            font-size: 15px;
