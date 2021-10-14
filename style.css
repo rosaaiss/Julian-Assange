@@ -12,8 +12,9 @@
 
 body{
     background:black;
-    color:white;
+    color:#FAFAFA;
     font-family: 'Roboto', sans-serif;
+    font-weight:lighter;
 }
 
 img{
@@ -33,15 +34,16 @@ img{
     position:fixed;
     top: 0%;
     z-index: 10;
-    background: black; 
-    height: 40px; 
+    background:black; 
+    height: 40px;
+    width: 100%;
 }
 
 .header a{
     text-decoration: none;
-    color: white;
     padding: 10px;
     font-size: 22px;
+    color:#fafafa;
 }
 
 a:hover{
@@ -50,40 +52,40 @@ a:hover{
 
 .accueil{
     background: url('image/accueil.png') no-repeat center/cover;
-    height: 1024px;
+     min-height: 1024px; 
 }
 
 .titre{
     flex-direction: column;
     justify-content: center;
-    padding-left: 20px; 
-    height: 100%;
+    padding-left: 20px;   
 }
 
- h1{
-    font-size:60px;
-    line-height: 1.5em;
-    padding-left: 15px; 
+h1{
+    margin-top:350px; 
+    font-size:clamp(25px,10vw,60px);
+    line-height:2em;
 }
 
  .julian{
-    font-size:90px;
+    /* font-size:90px; */
     color:rgba(223, 45, 45, 0.863);
     font-family: 'Domine', sans-serif;
+     font-size:clamp(35px,10vw,90px); 
 }
 
 h2{
-    font-size:40px;
     line-height: 1.8em;
+    font-size:clamp(20px,10vw,40px);
 }
 
  p{
-    font-size:20px;
-    line-height: 1.5em;
+    font-size:22px; 
+    line-height: 2em;
 }
 
  span, .dix, .verite h2:hover, .cyber h2:hover{
-    color:rgba(223, 45, 45, 0.863);
+    color:#df2d2ddc;
 }
 
  .portrait .pentagone{
@@ -94,7 +96,7 @@ h2{
 }
 
  .verite h2{
-    transform: translateX(-55%); 
+    transform: translate(-60%, 20%); 
     background:rgba(216, 209, 207, .6);
     color: black;
     padding:10px;    
@@ -111,7 +113,7 @@ h2{
 
 .americaine{
     padding-left: 400px;
-    color: white;
+    color: #FAFAFA;
 }
 
 .wiki {
@@ -127,7 +129,7 @@ h2{
 }
 
 .citation{
-    border: 1px solid white;
+    border: 1px solid #FAFAFA;
     text-align: center;
     padding: 30px 30px;
     margin:50px;
@@ -149,7 +151,7 @@ h2{
 
 .portraitjulian{
     grid-area: G2;
-    margin-top: 100px;
+    margin-top: 80px;
 }
 
 .dix{
@@ -163,7 +165,7 @@ h2{
 
 .evenement{
     grid-area: G4;
-    padding: 50px;
+    padding: 40px;
 }
 
 .anonymous{
@@ -189,7 +191,7 @@ h2{
 }
 
 .citation2{
-    border: 1px solid white;
+    border: 1px solid #FAFAFA;
     text-align: center;
     padding: 40px;
     margin: 100px;
@@ -204,7 +206,7 @@ h2{
 }
 
 .free img{
-    border: 1px solid white ;
+    border: 1px solid #FAFAFA ;
     padding: 20px;
     margin: 20px;
 }
@@ -262,7 +264,7 @@ h2{
     width: 100%;
     height: 269px; 
     left: 0px;
-    top: 6500px;  
+    top: 7100px;  
     border: 1px solid rgba(223, 45, 45, 0.863);
 }
 
@@ -284,6 +286,7 @@ h2{
     left: 52.29%;
     right: 44.24%;
     bottom: 40%;
+    
 }
 
 .footer p{
@@ -308,7 +311,7 @@ h2{
              }
 
              h1{
-                 font-size: 45px; 
+                 font-size: 45px;  
                 padding-left: 10px;
            }
 
@@ -353,38 +356,23 @@ h2{
 
         @media(max-width:500px){
 
-        .accueil img{
-           height: 90vh; 
-         
-       }  
+        .accueil{
+        background: url('image/accueil.png') no-repeat center/cover;
+         min-height: 360px; 
+    } 
 
         .header{
            display: flex;
            flex-wrap: nowrap;
        }
 
-        .titre{
-          gap:100px;
-         justify-content: end;
-         padding-bottom: 100px;
-          
-        }
-
-        .julian{
-            font-size: 50px;
-        }
-
-        h1{
+         h1{
         font-size: 30px;
        }
- 
-       p{
-           font-size: 15px;
-       } 
 
-       h2{
-        font-size: 25px; 
-       }
+       p{
+        font-size: 16px;
+    } 
 
        .verite h2{
            margin-left:120px;
@@ -411,7 +399,6 @@ h2{
           height: 90vh;
            width: 100%;  
            align-items:flex-start;
-           /* margin-top: 50px;      */
     } 
 
     .vendetta p,
@@ -446,13 +433,14 @@ h2{
 
  body {position: relative;}
 
-footer {position: absolute; bottom: 6300px; left: 0; right: 0; 
+footer {position: absolute; bottom: 7000px; left: 0; right: 0; 
 
 }
 
 .F, .T, .I{
     width:25px ;
     height:25px ;
+    padding-left: 10px;
 }
 }
 
@@ -473,7 +461,7 @@ footer {position: absolute; bottom: 6300px; left: 0; right: 0;
    display: block;
    position: absolute;
    width: 230px;
-   height: 4.5%;
+   height: 4%;
     background: rgba(236,236,236, 0.3); 
    left: -230px;
    transition: .5s ease-out;
