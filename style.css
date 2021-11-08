@@ -82,6 +82,11 @@ h2{
  p{
     font-size:22px; 
     line-height: 2em;
+    text-align: justify;
+}
+
+.vendetta p{
+    width:60%;
 }
 
  span, .dix, .verite h2:hover, .cyber h2:hover{
@@ -91,7 +96,7 @@ h2{
  .portrait .pentagone{
     background:rgba(216, 209, 207, .6);
     color: black;
-    padding:5px;
+    padding:10px;
     margin-left: 100px;
 }
 
@@ -197,6 +202,11 @@ h2{
     margin: 100px;
 }
 
+.citation p, .citation2 p{
+    text-align: center;
+}
+
+
 .cyber{
     flex-direction: column;
     justify-content: center;
@@ -215,7 +225,8 @@ h2{
     justify-content: space-around;
 }
 
-.warriors{
+
+ .warriors{
     position:relative;
     justify-content: center;
     margin-top: 100px;
@@ -223,14 +234,14 @@ h2{
 
 .lanceur1,.lanceur2, .lanceur3, .warriors p{
     position:absolute;
-}
+} 
 
-.lanceur2{
+  .lanceur2{
     transform: translate(-50%,0%);
       height:380px ;
       width: 330px; 
       padding: 20px; 
-      border: 1px solid rgba(223, 45, 45, 0.863);
+      border: 2px solid rgba(223, 45, 45, 0.863);
 }
 
 .lanceur3{
@@ -239,7 +250,7 @@ h2{
       height:300px ;
       width: 400px; 
       padding: 20px;
-      border: 1px solid rgba(223, 45, 45, 0.863);
+      border: 2px solid rgba(223, 45, 45, 0.863);
 }
 
 .lanceur1{
@@ -248,24 +259,24 @@ h2{
       height:330px ;
       width: 380px; 
       padding: 20px;
-      border: 1px solid rgba(223, 45, 45, 0.863);
+      border: 2px solid rgba(223, 45, 45, 0.863);
 }
 
 .warriors p{
     right: 30%;
-    transform: translate(85%,40%); 
+    transform: translate(75%,10%); 
     padding:35px ; 
     font-size: 20px;
    
-}
+}  
 
-.footer{
+ .footer{
     position: absolute;
     width: 100%;
     height: 269px; 
     left: 0px;
     top: 7100px;  
-    border: 1px solid rgba(223, 45, 45, 0.863);
+    border: 2px solid rgba(223, 45, 45, 0.863);
 }
 
 .I{
@@ -297,7 +308,7 @@ h2{
     color:rgba(223, 45, 45, 0.863);
 }
 
- 
+  
 
 
         /* ****************MEDIA 900px******************** */
